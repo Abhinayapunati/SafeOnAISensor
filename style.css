@@ -1,0 +1,508 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===========================
+   GLOBAL
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fc;
+    color:#333;
+    line-height:1.6;
+}
+
+section{
+    padding:80px 10%;
+}
+
+h2{
+    font-size:40px;
+    text-align:center;
+    margin-bottom:50px;
+    color:#1e3a8a;
+}
+
+p{
+    color:#555;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 10%;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    text-decoration:none;
+}
+
+.logo img{
+    width:50px;
+    height:50px;
+}
+
+.logo h2{
+    font-size:28px;
+    margin:0;
+    color:#2563eb;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.nav-links li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links li a:hover{
+    color:#2563eb;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    min-height:90vh;
+    background:linear-gradient(135deg,#eef5ff,#ffffff);
+}
+
+.hero-text{
+    width:50%;
+}
+
+.hero-text h1{
+    font-size:60px;
+    line-height:1.2;
+    color:#111827;
+}
+
+.hero-text span{
+    color:#2563eb;
+}
+
+.hero-text p{
+    margin:25px 0;
+    font-size:18px;
+}
+
+.btn{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    padding:14px 35px;
+    border-radius:30px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-3px);
+}
+
+.hero-image{
+    width:45%;
+    text-align:center;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:450px;
+}
+
+/* ===========================
+   ABOUT
+=========================== */
+
+.about{
+    background:white;
+}
+
+.about-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+}
+
+.about-image{
+    flex:1;
+    text-align:center;
+}
+
+.about-image img{
+    width:350px;
+    max-width:100%;
+}
+
+.about-text{
+    flex:1;
+}
+
+.about-text p{
+    margin-bottom:20px;
+    font-size:17px;
+}
+
+/* ===========================
+   PRODUCT
+=========================== */
+
+.product{
+    background:#eef4ff;
+}
+
+.product-card{
+    display:flex;
+    gap:40px;
+    align-items:center;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.product-card img{
+    width:300px;
+}
+
+.product-info h3{
+    font-size:32px;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.product-info p{
+    margin-bottom:20px;
+}
+
+.product-info h4{
+    margin-bottom:15px;
+    color:#111827;
+}
+
+.product-info ul{
+    padding-left:20px;
+}
+
+.product-info li{
+    margin-bottom:10px;
+}
+/* ===========================
+   FEATURES
+=========================== */
+
+.features{
+    background:#ffffff;
+}
+
+.feature-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.feature-card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.feature-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(37,99,235,0.2);
+}
+
+.feature-card h3{
+    color:#2563eb;
+    margin-bottom:15px;
+    font-size:22px;
+}
+
+.feature-card p{
+    font-size:16px;
+    color:#555;
+}
+
+/* ===========================
+   BENEFITS
+=========================== */
+
+.benefits{
+    background:#eef5ff;
+}
+
+.benefit-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.benefit-card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.benefit-card:hover{
+    transform:translateY(-10px);
+}
+
+.benefit-card h3{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+/* ===========================
+   HOW IT WORKS
+=========================== */
+
+.working{
+    background:white;
+}
+
+.steps{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.step{
+    background:#2563eb;
+    color:white;
+    padding:20px;
+    border-radius:12px;
+    min-width:170px;
+    text-align:center;
+    font-weight:600;
+}
+
+.arrow{
+    font-size:28px;
+    color:#2563eb;
+    font-weight:bold;
+}
+
+/* ===========================
+   PRICING
+=========================== */
+
+.pricing{
+    background:#eef5ff;
+}
+
+.price-card{
+    max-width:420px;
+    margin:auto;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.price-card h3{
+    color:#2563eb;
+}
+
+.price-card h1{
+    font-size:60px;
+    color:#111827;
+    margin:15px 0;
+}
+
+.price-card p{
+    color:red;
+    font-size:18px;
+}
+
+.price-card ul{
+    list-style:none;
+    margin:25px 0;
+}
+
+.price-card li{
+    margin:12px 0;
+}
+
+.price-card .btn{
+    margin-top:15px;
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+
+.contact{
+    background:white;
+}
+
+.contact-container{
+    max-width:700px;
+    margin:auto;
+    background:#f9fbff;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.contact-container h3{
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.contact-container p{
+    margin:12px 0;
+    font-size:18px;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+footer h2{
+    color:white;
+    margin-bottom:10px;
+}
+
+footer p{
+    color:#d1d5db;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+    .hero,
+    .about-container,
+    .product-card{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-text,
+    .hero-image,
+    .about-text,
+    .about-image{
+        width:100%;
+    }
+
+    .navbar{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero-text h1{
+        font-size:45px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    section{
+        padding:60px 7%;
+    }
+
+    h2{
+        font-size:32px;
+    }
+
+    .hero-text h1{
+        font-size:38px;
+    }
+
+    .steps{
+        flex-direction:column;
+    }
+
+    .arrow{
+        transform:rotate(90deg);
+    }
+
+    .price-card{
+        width:100%;
+    }
+
+}
+html{
+    scroll-behavior:smooth;
+}
+
+.feature-card,
+.benefit-card,
+.price-card,
+.product-card{
+    transition:0.4s ease;
+}
+
+.feature-card:hover,
+.benefit-card:hover,
+.price-card:hover,
+.product-card:hover{
+    transform:translateY(-8px);
+}
